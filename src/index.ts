@@ -1,7 +1,7 @@
 import express from "express";
 import { errorHandler }  from "./middlewares/errorHandler"
 
-const app = require("express");
+const app = express()
 
 app.get("/health", (_req, res) => {
     res.json({ status: "ok" });
